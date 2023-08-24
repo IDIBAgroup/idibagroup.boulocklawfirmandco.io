@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>
+      <?php if (isset($title)):?>
+        <?= $title; ?>
+      <?php else: ?>
+        Boulock Law Office 
+      <?php endif ?>
+  </title>
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- <link href="assets/css/equipe-card.css" rel="stylesheet"> -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container">
+      <nav id="navbar" class="navbar d-flex align-items-center justify-content-center">
+        <ul>
+        <?= nav_item('..//index.php', 'Acceuil');?>
+        <?= nav_item('/services.php', 'Services');?>
+        <?= nav_item('/etudes.php', 'Etudes');?>
+        </ul>
+        <a href="index.html" class="logo logo-mobile"><img src="assets/img/logo.svg" alt="" class=""></a>
+        <ul class="second_ul">
+        <?= nav_item('/equipe.php', 'Equipe');?>
+        <?= nav_item('/blog.php', 'Blog');?>
+        <?= nav_item('/contacts.php', 'Contact');?>
+        </ul>
+        
+        <div class="language">
+          <div class="language-selected"></div>
+          <ul>
+            <li><a href="#" class="fr">Français</a></li>
+            <li><a href="#" class="us">USA</a></li>
+            <li><a href="#" class="es">Espagnol</a></li>
+          </ul>
+        </div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+<section class="mini-banner d-flex align-items-center justify-content-center" style="background-image: url(assets/img/banner/1.jpg)">
+            <div class="container">
+              <div class="col-lg-12 z-dex-2 d-flex flex-column justify-content-center order-2 order-lg-1">
+                <p>contact</p>
+                <h1>Contactez-Nous</h1>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                </div>
+              </div>
+            </div>
+        </section>
+
+        
+        <section id="get-started" class="get-started section-bg">
+      <div class="container">
+        <div class="row justify-content-between gy-4">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 map-card" data-aos="fade-up">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 ma-0" data-aos="fade">
+            <form action="forms/quote.php" method="post" class="php-email-form">
+              <h3>Get a quote</h3>
+              <div class="row gy-3">
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Name & prenom" required>
+                </div>
+
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+                  <button class="btn-get-started" type="submit">Soumettre</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container d-flex flex-column align-items-end">
+      <!-- <div class="container d-flex flex-column align-items-end"> -->
+        <div class="row d-flex align-items-start ">
+          <div class="logo-box col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <a href="">
+              <img src="assets/img/white logo.png" alt="">
+            </a>
+            <p class="col-lg-12 col-md-6 col-sm-3 col-xs-3 logo-p">Bepanda - Boulangerie la paix Avant mission catholique vers Missokè</p>
+          </div>
+          <div class="col-lg-9 col-md-12 col-sm-9 col-xs-9 links d-flex align-items-start justify-content-between">
+            <div class="link-bloc d-flex align-items-start justify-content-around">
+              <div class="first-link-bloc mr-20">
+                <h4>Links</h4>
+                <ul>
+                  <li><a href="" class="active">Acceuil</a></li>
+                  <li><a href="">Equipe</a></li>
+                  <li><a href="">Etudes</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+              <div class="second-link-bloc mr-20">
+                <h4>Contact</h4>
+                <p>+237 600 000 000 <br> info@boulocklawoffice.com</p>
+                <div class="social-media-link">
+                  <ul class="d-flex align-items-center">
+                    <li>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-newsletter">
+              <h4>Inscrivez votre adresse mail pour recevoir les informations</h4>
+              <form action="" method="post">
+                <input type="email" name="email" placeholder="Adress Email"><input type="submit" value="Soumettre">
+              </form>
+            </div>
+          </div>
+        </div>
+        <P class="copyright">
+          Copyright © 2023 AB& Partners. All rights reserved Designed & developed by <a href=""> Idiba group</a>.
+        </P>
+      <!-- </div> -->
+    </div>
+  </footer>
+  
+  
+  <!-- <div id="preloader"></div> -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+  <!-- <script src="js/equipe-card.js"></script> -->
+  
+  </body>
+  
+  </html>
